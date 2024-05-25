@@ -1,0 +1,13 @@
+.slider__2 {
+  width: 100%;
+  object-fit: cover;
+
+  img {
+    width: inherit;
+    height: 400px;
+    object-fit: cover;
+    object-position: center center;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+}

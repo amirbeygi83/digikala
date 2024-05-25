@@ -1,0 +1,145 @@
+.supermarket__sh {
+  width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  .supermarket__sh__center {
+    width: 97%;
+    height: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3e0e3;
+    border-radius: 16px;
+    .supermarket__right {
+      width: 40%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      padding-right: 30px;
+      box-sizing: border-box;
+      & img {
+        width: 75px;
+        outline: none;
+        border-radius: unset;
+        font-family: var(--fontFamily);
+      }
+      .super__2 {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        .bottom__sh__txt {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          padding-top: 5px;
+          span {
+            font-size: 15px;
+            font-family: var(--fontFamily);
+          }
+        }
+      }
+
+      .timer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding-right: 15px;
+        box-sizing: border-box;
+        .time__2 {
+          display: inline-block;
+          & a {
+            font-family: var(--bnazanin);
+            text-decoration: none;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            font-size: 15px;
+            color: #2b2b2b;
+            font-weight: bold;
+            padding: 4px;
+          }
+          span {
+            font-weight: 600;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: var(--fontFamily);
+          }
+        }
+      }
+    }
+    .supermarket__left {
+      width: 50%;
+      height: 110px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      column-gap: 16px;
+      & a {
+        color: crimson;
+        text-decoration: none;
+        font-size: medium;
+        background-color: white;
+        border-radius: 29px;
+      }
+      & img {
+        width: 72px;
+        height: 72px;
+        outline: unset;
+        border-radius: 50%;
+      }
+      .discount__supermarket {
+        position: relative;
+        & span {
+          right: 0;
+          bottom: 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+.super {
+  width: 206px !important;
+  height: 28px;
+}
+.supermarket__left {
+  & span {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: crimson;
+    width: 35px;
+    height: 15px;
+    border-radius: 15px;
+    color: whitesmoke;
+  }
+  .more {
+    margin-right: unset;
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    & a {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    & svg {
+      vertical-align: middle;
+      margin: auto 10px;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.selected {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  .selected__center {
+    width: 90%;
+    border: 1px solid rgb(229, 228, 228);
+    border-radius: 16px;
+    .selected__text__center {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+      box-sizing: border-box;
+      h1 {
+        font-size: 22px;
+        font-family: var(--fontfamily);
+        font-weight: 200;
+        margin-right: 10px;
+      }
+    }
+    .selected__images {
+      cursor: pointer;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+      .border {
+        box-sizing: border-box;
+        padding: 35px;
+        border-left: 1px solid rgb(229, 228, 228);
+        border-bottom: 1px solid rgb(229, 228, 228);
+      }
+      .border__6,
+      .border__12,
+      .border__18 {
+        box-sizing: border-box;
+        border-left: unset;
+        border-bottom: 1px solid rgb(229, 228, 228);
+        padding: 35px;
+      }
+      .border__13,
+      .border__14,
+      .border__15,
+      .border__16,
+      .border__17 {
+        box-sizing: border-box;
+        border-bottom: unset;
+        border-left: 1px solid rgb(229, 228, 228);
+        padding: 35px;
+      }
+      .border__18 {
+        border-bottom: unset;
+      }
+      img {
+        width: 150px;
+        height: 170px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+      }
+      .price__selected {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        & span {
+          font-family: var(--bnazanin);
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 20px;
+          margin-left: -30px;
+        }
+        .percentage__selected {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          font-weight: bold;
+          border-radius: 20px;
+          background-color: crimson;
+          color: whitesmoke;
+          font-size: 16px;
+          margin-right: -25px;
+        }
+      }
+      .discount__selected {
+        width: 100%;
+        font-family: var(--bnazanin);
+        font-size: 18px;
+        color: lightgray;
+        text-decoration: line-through;
+        text-align: left;
+        margin-right: 30px;
+      }
+    }
+  }
+}

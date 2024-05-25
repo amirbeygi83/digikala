@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 500px;
+  margin: 50px auto;
+  height: auto;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 10px auto;
+  border-radius: 10px;
+  position: relative;
+  left: calc(50% - auto/2);
+  top: 100px;
+  & svg {
+    width: 200px;
+    height: 50px;
+    margin: 0 150px;
+    margin-top: 50px;
+    margin-bottom: -30px;
+  }
+  & h1 {
+    margin: 50px;
+    font-family: var(--fontfamily);
+    font-size: 23px;
+    font-weight: bold;
+  }
+  & h2,
+  h3 {
+    margin: 20px 45px;
+    font-family: var(--fontfamily);
+    font-size: 15px;
+    font-weight: 100;
+  }
+}
+.inputbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.textbox {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  border: crimson solid 1px;
+  outline: none;
+  font-family: var(--fontfamily);
+  font-size: 15px;
+  padding-right: 20px;
+}
+.span {
+  margin: 10px 48px;
+  font-family: var(--fontfamily);
+  font-size: 15px;
+  font-weight: 100;
+  color: crimson;
+}
+.submit {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 20px 50px;
+  font-size: 20px;
+  background-color: crimson;
+  color: whitesmoke;
+  outline: unset;
+  border-style: solid;
+  border: crimson solid;
+}
+.links {
+  margin-right: 40px;
+  margin-bottom: 20px;
+  font-family: var(--fontfamily);
+  font-size: 13px;
+  font-weight: 100;
+  & a:link {
+    color: rgba(5, 109, 221, 0.786);
+    font-size: 15px;
+    text-decoration: none;
+  }
+}
